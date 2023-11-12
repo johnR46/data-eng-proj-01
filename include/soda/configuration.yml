@@ -1,0 +1,15 @@
+data_source retail:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+    auth_scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+    project_id: 'eco-serenity-397311'
+    dataset: retail
+
+soda_cloud:
+  host: cloud.soda.io
+  api_key_id: 07b15fd6-9dd6-4ff4-bf19-56bd98ac2a7e
+  api_key_secret: AJkTRcT3eKbzcqpE_3PSkanWn40QF3feeAbx1mLmPL8hyxWRxpux9A
